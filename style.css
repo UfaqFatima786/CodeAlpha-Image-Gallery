@@ -1,0 +1,34 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar h2 {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navbar h2 {
+        font-size: 1.5rem;
+    }
+}
