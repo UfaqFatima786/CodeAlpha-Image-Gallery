@@ -45,6 +45,10 @@ body {
     color: white;
     text-decoration: none;
  }
+ .heading-3{
+
+    background-color: linear-gradient(90deg,rgba(245, 7, 79, 1) 28%, rgba(236, 15, 51, 1) 66%, rgba(227, 23, 23, 1) 85%, rgba(191, 214, 98, 1) 100%, rgba(237, 221, 83, 1) 100%);;
+ }
 .footer {
     background-color: #b95c8a;
     color: #fff;
