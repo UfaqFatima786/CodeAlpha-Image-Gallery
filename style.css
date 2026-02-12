@@ -24,7 +24,11 @@ body {
     background-color: #f882b3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.logo-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
 .btn {
     background-color: #ff006a;
     color: white;
@@ -61,9 +65,6 @@ a {
     width: 300px;
     border-radius: 50px;
     border: #ff006a solid 2px;
-    animation-name: zoom-in;
-    animation-duration: 5sec;
-
 }
 
 .img-1:hover {
@@ -80,21 +81,52 @@ a {
     height: 300px;
     width: 300px;
     border-radius: 50px;
+    border: #ff006a solid 2px;
+}
 
+.img-2:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 25px #000000;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
 }
 
 .img-3 {
     height: 300px;
     width: 300px;
     border-radius: 50px;
+    border: #ff006a solid 2px;
 
+}
+
+.img-3:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 25px #000000;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
 }
 
 .img-4 {
     height: 300px;
     width: 300px;
     border-radius: 50px;
+    border: #ff006a solid 2px;
+}
 
+.img-4:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 25px #000000;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
 }
 
 .footer {
