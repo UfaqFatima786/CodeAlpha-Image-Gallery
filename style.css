@@ -19,11 +19,13 @@
     font-weight: 600;
     white-space: nowrap;
 }
+
 body {
     background-color: #f882b3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
- .btn{
+
+.btn {
     background-color: #ff006a;
     color: white;
     gap: 50px;
@@ -31,24 +33,70 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
- }
-  .btn:hover{
+}
+
+.btn:hover {
     background-color: #fc4490;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
- }
- a{
+}
+
+a {
     gap: 50px;
     color: white;
     text-decoration: none;
- }
- .heading-3{
+}
 
-    background-color: linear-gradient(90deg,rgba(245, 7, 79, 1) 28%, rgba(236, 15, 51, 1) 66%, rgba(227, 23, 23, 1) 85%, rgba(191, 214, 98, 1) 100%, rgba(237, 221, 83, 1) 100%);;
- }
+.heading-3 {
+
+    background-image: linear-gradient(90deg, rgba(245, 7, 79, 1) 28%, rgba(236, 15, 51, 1) 66%, rgba(227, 23, 23, 1) 85%, rgba(191, 214, 98, 1) 100%, rgba(237, 221, 83, 1) 100%);
+    ;
+}
+
+.img-1 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    border: #ff006a solid 2px;
+    animation-name: zoom-in;
+    animation-duration: 5sec;
+
+}
+
+.img-1:hover {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 25px #000000;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+}
+
+.img-2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+
+}
+
+.img-3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+
+}
+
+.img-4 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+
+}
+
 .footer {
     background-color: #b95c8a;
     color: #fff;
@@ -60,12 +108,14 @@ body {
     max-width: 1000px;
     margin: auto;
 }
-.github-icon{
+
+.github-icon {
     width: 30px;
     height: 30px;
     border-radius: 50px;
     margin-left: 5px;
 }
+
 .row-footer-row {
     display: flex;
     flex-wrap: wrap;
@@ -108,9 +158,11 @@ body {
 .footer-contact p {
     margin: 5px 0;
 }
-.footer-para{
+
+.footer-para {
     font-size: 20px;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
     .row-footer-row {
@@ -125,23 +177,24 @@ body {
     }
 }
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .navbar .container-fluid {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .navbar h2 {
         font-size: 1.5rem;
     }
-} 
+}
+
 @media (max-width: 576px) {
     .navbar .container-fluid {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .navbar h2 {
         font-size: 1.2rem;
     }
-} 
+}
