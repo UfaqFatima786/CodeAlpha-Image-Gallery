@@ -220,7 +220,7 @@ a {
 }
 
 .section-services:hover {
-    background-color: #fc7dcb;
+    background-color: #f854b9;
     box-shadow: 5px 5px 25px rgb(255, 255, 255);
     cursor: pointer;
     animation-name: zoom-In;
@@ -228,8 +228,9 @@ a {
 }
 
 .btn-01 {
-    font-size: 37px;
-    font-style: bold;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
      background: linear-gradient(90deg,
             rgb(255, 0, 0) 28%,
             rgb(236, 15, 144) 66%,
@@ -251,7 +252,7 @@ a {
     color: #fcfafa;
     cursor: pointer;
     transition: 0.5s;
-    border: 2px solid rgb(252, 180, 220);
+    border: 2px solid rgb(128, 2, 71);
 
 
 }
