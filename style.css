@@ -270,7 +270,37 @@ a {
     animation-name: zoom-In;
     animation-duration: 2s;
 }
+.second-card-row{
+    background-color:#b95c8a;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+.col{
+    background-color:#b95c8a;
+}
+.card {
+    background-color: #f8a6cc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
 
+.card:hover {
+    background-color: rgb(184, 60, 130);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgb(247, 186, 186);
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+}
+.emoji{
+    font-size: 50px;
+}
+.second-card-row{
+
+}
 .footer {
     background-color: #b95c8a;
     color: #fff;
