@@ -30,28 +30,25 @@ body {
 }
 
 .logo-1 {
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
+    width: clamp(40px, 8vw, 50px);
+    height: auto;
+    border-radius: 12px;
 }
 
 .btn {
     background-color: #ff006a;
     color: white;
-    gap: 50px;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
 }
 
 .btn:hover {
     background-color: #fc4490;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transform: translateY(-2px);
 }
 
 a {
@@ -93,11 +90,11 @@ a {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 65px;
-    font-weight: 800px;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 800;
     animation-name: pulse;
     animation-duration: 2s;
-
+    text-transform: capitalize;
 }
 
 .heading-3:hover {
@@ -121,91 +118,27 @@ a {
 }
 
 
-.img-1 {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    border: #ff006a solid 2px;
-}
-
-.img-1:hover {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    box-shadow: 0px 15px 25px #000000;
-    cursor: pointer;
-    animation-name: pulse;
-    animation-duration: 2s;
-}
-
-.header-img {
-    width: 200px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.header-img:hover {
-    width: 200px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: #000;
-    animation-name: zoom-in;
-    animation-duration: 2s;
-    cursor: pointer;
-}
-
-.img-2 {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    border: #ff006a solid 2px;
-}
-
-.img-2:hover {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    box-shadow: 0px 15px 25px #000000;
-    cursor: pointer;
-    animation-name: pulse;
-    animation-duration: 2s;
-}
-
-.img-3 {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    border: #ff006a solid 2px;
-
-}
-
-.img-3:hover {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    box-shadow: 0px 15px 25px #000000;
-    cursor: pointer;
-    animation-name: pulse;
-    animation-duration: 2s;
-}
-
+.img-1,
+.img-2,
+.img-3,
 .img-4 {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
     border: #ff006a solid 2px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
 .img-4:hover {
-    height: 300px;
-    width: 300px;
-    border-radius: 50px;
-    box-shadow: 0px 15px 25px #000000;
+    transform: scale(1.05);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    animation-name: pulse;
-    animation-duration: 2s;
 }
 
 
@@ -228,10 +161,10 @@ a {
 }
 
 .btn-01 {
-    font-size: 50px;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: bold;
     font-style: italic;
-     background: linear-gradient(90deg,
+    background: linear-gradient(90deg,
             rgb(255, 0, 0) 28%,
             rgb(236, 15, 144) 66%,
             rgb(148, 1, 1) 85%,
@@ -240,21 +173,17 @@ a {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #85366d;
     border: 2px solid black;
     border-radius: 25px;
+    padding: 10px 20px;
 }
 
 .btn-01:hover {
-    font-size: 40px;
-    font-style: bold;
-    background-color: #530202;
-    color: #fcfafa;
+    background: #530202;
+    -webkit-text-fill-color: #fcfafa;
     cursor: pointer;
     transition: 0.5s;
     border: 2px solid rgb(128, 2, 71);
-
-
 }
 
 .about-para {
@@ -270,15 +199,18 @@ a {
     animation-name: zoom-In;
     animation-duration: 2s;
 }
-.second-card-row{
-    background-color:#b95c8a;
+
+.second-card-row {
+    background-color: #b95c8a;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
-.col{
-    background-color:#b95c8a;
+
+.col {
+    background-color: #b95c8a;
 }
+
 .card {
     background-color: #f8a6cc;
     border-radius: 10px;
@@ -295,12 +227,15 @@ a {
     animation-name: pulse;
     animation-duration: 2s;
 }
-.emoji{
+
+.card-title {
+    font-size: 30px;
+}
+
+.emoji {
     font-size: 50px;
 }
-.second-card-row{
 
-}
 .footer {
     background-color: #b95c8a;
     color: #fff;
